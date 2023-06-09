@@ -1,0 +1,345 @@
+.grid_block {
+    display: grid;
+    grid-template-rows: 10% 75% 15%;
+    overflow: hidden;
+    background-color: #080420;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.brand img {
+    height: 2rem;
+}
+
+.brand h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    gap: 0.8rem;
+}
+
+.contact ::-ms-thumb {
+    background-color: #ffffff39;
+    width: 0.1rem;
+    border-radius: 1rem;
+}
+
+.contact ::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.contact .contacts {
+    background-color: #ffffff34;
+    min-height: 5rem;
+    cursor: pointer;
+    width: 90%;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.contacts .avatar img {
+    height: 3rem;
+}
+
+.contacts .username h3 {
+    color: white;
+}
+
+.contact .selected {
+    background-color: #9a86f3;
+}
+
+.current-user {
+    background-color: #0d0d30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.current-user .avatar img {
+    height: 4rem;
+    max-inline-size: 100%;
+}
+
+.current-user .username h2 {
+    color: white;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.welcome img {
+    height: 20rem;
+}
+
+.welcome h1 span {
+    color: #4e0eff;
+}
+
+.chat_cont {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    gap: 0.1rem;
+    overflow: hidden;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.chat-header .user-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-details .avatar img {
+    height: 3rem;
+}
+
+.user-details .username h3 {
+    color: white;
+}
+
+.chat-messages {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+}
+
+.chat-messages::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.chat-messages::-ms-thumb {
+    background-color: #ffffff39;
+    width: 0.1rem;
+    border-radius: 1rem;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    max-width: 40%;
+    overflow-wrap: break-word;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    color: #d1d1d1;
+}
+
+.sended {
+    justify-content: flex-end;
+}
+
+.sended .content {
+    background-color: #4f04ff21;
+}
+
+.recieved {
+    justify-content: flex-start;
+}
+
+.recieved .content {
+    background-color: #4f04ff20;
+}
+
+.send-mgs {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5% 95%;
+    background-color: #080420;
+    padding: 0 2rem;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+.emoji {
+    position: relative;
+}
+
+.emoji svg {
+    font-size: 1.5rem;
+    color: #ffff00c8;
+    cursor: pointer;
+}
+
+.emoji .emoji-picker-react {
+    position: absolute;
+    top: -350px;
+    background-color: #080420;
+    box-shadow: 0 5px 10px #9a86f3;
+    border-color: #9a86f3;
+}
+
+.emoji .emoji-scroll-wrapper::-webkit-scrollbar {
+    background-color: #080420;
+    width: 5px;
+}
+
+.emoji .emoji-scroll-wrapper::-ms-thumb {
+    background-color: #9a86f3;
+}
+
+.emoji .emoji-categories button {
+    filter: contrast(0);
+}
+
+.emoji .emoji-search {
+    background-color: transparent;
+    border-color: #9a86f3;
+}
+
+.emoji .emoji-group::before {
+    background-color: #080420;
+}
+
+.send-mgs .input-container {
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #ffffff34;
+}
+
+.input-container input {
+    width: 90%;
+    height: 60%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.input-container input::selection {
+    background-color: #9a86f3;
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container button {
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9a86f3;
+    border: none;
+}
+.emoji-size{
+    position: absolute;
+    top: -460px;
+    height: 350px;
+}
+.emoji-size aside{
+    height: 100%;
+    width: 100%;
+}
+.logout button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #9a86f3;
+    border: none;
+    cursor: pointer;    
+}
+.logout button svg{
+    font-size: 1.3rem;
+    color: #ebe7ff;
+}
+.contact form{
+    width: 95%;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #ffffff34;
+    margin: 0.5rem 0;
+}
+.contact form input{
+    width: 90%;
+    height: 60%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+}
+.contact form button{
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9a86f3;
+    border: none;
+}
+.contact h1{
+    color: white;
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    .grid_block {
+        gap: 0.5rem;
+        ;
+    }
+
+    .username h2 {
+        font-size: 1rem;
+    }
+
+    .chat_cont {
+        grid-template-rows: 15% 70% 15%;
+    }
+
+    .chat-messages .message .content {
+        width: 70%;
+    }
+
+    .send-mgs {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+}

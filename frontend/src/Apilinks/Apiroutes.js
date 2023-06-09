@@ -1,0 +1,9 @@
+export const host = 'https://getchat-saa1.onrender.com'
+export const register = `${host}/api/v1/register`
+export const login = `${host}/api/v1/login`
+export const setavatar = `${host}/api/v1/setavatar`
+export const getuser = `${host}/api/v1/getuser`
+export const sendmsg = `${host}/api/v1/addmsg`
+export const recivemsg = `${host}/api/v1/getmsgs`
+export const logout = `${host}/api/v1/logout`
+export const getfriend = `${host}/api/v1/friend`
